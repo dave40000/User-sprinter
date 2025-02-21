@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>User Research Sprint</title>
+  <!-- Tailwind CSS via CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="font-sans bg-gray-50">
+  <div class="space-y-12 p-6 max-w-7xl mx-auto">
+    <!-- Hero Section -->
+    <section class="text-center space-y-6 bg-gray-100 p-10 rounded-2xl shadow-lg">
+      <h1 class="text-4xl font-bold">Get Actionable User Insights in Just 5 Days</h1>
+      <p class="text-lg">No long-term commitment. Fast, reliable, and user-focused research sprints.</p>
+      <button class="bg-blue-500 text-white py-2 px-6 rounded-2xl">Book a Free Consultation</button>
+    </section>
+
+    <!-- How It Works -->
+    <section class="space-y-6">
+      <h2 class="text-3xl font-semibold text-center">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="bg-white p-4 rounded-2xl shadow text-center">
+          <h3 class="font-bold text-lg">Day 1</h3>
+          <p>Define Goals</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow text-center">
+          <h3 class="font-bold text-lg">Day 2</h3>
+          <p>Recruit Users</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow text-center">
+          <h3 class="font-bold text-lg">Day 3</h3>
+          <p>Conduct Research</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow text-center">
+          <h3 class="font-bold text-lg">Day 4</h3>
+          <p>Analyze Insights</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow text-center">
+          <h3 class="font-bold text-lg">Day 5</h3>
+          <p>Deliver Report</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="space-y-6">
+      <h2 class="text-3xl font-semibold text-center">Service Packages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-6 rounded-2xl text-center shadow">
+          <h3 class="text-2xl font-bold">Essential Sprint</h3>
+          <p class="my-2 text-lg">$1,500</p>
+          <p>1-week sprint with user interviews and a final report.</p>
+          <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-2xl">Select</button>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl text-center shadow">
+          <h3 class="text-2xl font-bold">Deep Dive Sprint</h3>
+          <p class="my-2 text-lg">$2,500</p>
+          <p>2-week sprint including usability tests and detailed analysis.</p>
+          <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-2xl">Select</button>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl text-center shadow">
+          <h3 class="text-2xl font-bold">Custom Sprint</h3>
+          <p class="my-2 text-lg">Contact for pricing</p>
+          <p>Tailored research based on your needs.</p>
+          <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-2xl">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="space-y-6">
+      <h2 class="text-3xl font-semibold text-center">Success Stories</h2>
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <p class="text-lg italic">"We increased conversions by 30% after a 5-day sprint with this team!" - Startup XYZ</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="space-y-6 text-center bg-gray-50 p-8 rounded-2xl">
+      <h2 class="text-3xl font-semibold">Get Started Today</h2>
+      <form onsubmit="event.preventDefault(); handleFormSubmit();" class="space-y-4 max-w-md mx-auto">
+        <input
+          id="email-input"
+          type="email"
+          placeholder="Your Email"
+          class="p-2 w-full rounded-2xl border"
+          required
+        />
+        <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-2xl">Submit</button>
+      </form>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 mt-10">
+      © 2025 User Research Sprints. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function handleFormSubmit() {
+      const emailValue = document.getElementById('email-input').value;
+      alert(\"Thank you! We'll reach out to \" + emailValue);
+      document.getElementById('email-input').value = '';
+    }
+  </script>
+</body>
+</html>
